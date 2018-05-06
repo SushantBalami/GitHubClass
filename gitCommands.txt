@@ -47,4 +47,18 @@ git push origin master
 
 
 
+git checkout file.txt 	// to revert back to previous commit of the file
+
+git commit -m "Bad or mistake commit message"
+git commit --amend -m "Fixed commit message" 	// to fix the bad commit message
+
+reset:
+git reset --soft 97bf446e 	// resets to the hash but keeps the files in staging area
+git reset 97bf446e 	// resets to the hash and removes the files from the staging area but keeps the file in working directory
+git reset --hard 97bf446e 	// resets everything to the specified commit
+
+git reflog 	// gets all the log in order of when you last referenced them
+
+
+
 
