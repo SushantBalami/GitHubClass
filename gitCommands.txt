@@ -13,3 +13,38 @@ git status
 git commit -m "Prajesh changed the file project.txt"
 git status
 git push -u origin master
+
+git reset // removes the files from the staging area
+git reset <file> // removes the specific file from the staging area
+git log   // shows the log of the commits.
+git config --list  // Shows the list of the config file..
+
+git clone <url> <where to clone>  // clones the remote repositories to the specified location.
+git clone https://github.com/SushantBalami/GitHubClass.git .  	// clones remote repo GitHubClass git to current dir
+git diff 	// get difference of the changes in files
+git add -A 	// add all the changes to staging area
+git commit -m "message" 	// commit the changes with the message
+git pull origin master 		// get the changes from the repository
+git push origin master		// push the changes to the repository
+
+origin // name of the remote repository
+master // name of the branch we want to pull/push
+
+git branch newBranch 	// create a new branch called newBranch, default is master
+git checkout newBranch 	// switch to the branch newBranch
+git branch -a	// shows all the branches in the git repo including remote repo
+git branch 	// lists all the local branches
+git branch -d <nameOfBranch> 	// delete the branch locally
+git push origin --delete nameOfBranchToDeleteInRemoteRepo 	// deletes the branch from the remote repo. be sure to merge the branch before deleting 
+
+git branch --merge 	// branches that are merged so far
+
+to merge newBranch to master:
+git checkout master
+git pull origin master
+git merge newBranch
+git push origin master
+
+
+
+
